@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css sizing units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        html{
+            font-size: 12px;
+        }
+
+        .vansh{
+            border: 2px solid blue;
+            background-color: yellow;
+            /* width: 1024px; */
+            /* dont use width in px when you have to make it full screen cause it can cause trouble */
+            /* use */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+        /* inline element pr aap margin auto nahi laga sakte hai */ 
+        
+
+            box-sizing: border-box;
+            /* text-align: center; */
+
+
+        }
+     
+        .kalu{
+            border: 2px solid black;
+            background-color: aqua;
+            width: 80vw;
+            font-size: 22px;
+            margin: 23px  auto;
+            /* font-size: 15px; */
+            /* height: 80vh ; */
+            min-height: 80vh;
+            /* min-height helps to create a reserved place for the content and as the content increase height for container will also increases */
+
+
+        }
+        /* rem  */
+        /* root element(HTML) ko jitna milne wala tha uska multiply by 2 kardo = rem */
+          .p{
+            border: 2px solid green;
+            /* em */
+            /* container ko jitna milne wala tha  uska multiply by 2 kardo = em */
+         font-size: 2em;
+         width: 50%;
+
+      }
+      .mycutie{
+        background-color: gray;
+        border: 2px solid black;
+        width: 100vmin;
+        /* vmin is eqaul to vh in pc or latops
+        and
+        vmin is eqaul  to vw in moblie  */
+        /* width: 100vh; */
+        margin: auto;
+      }
+      .k{
+        border: 2px solid palevioletred;
+        width: 50%;
+      }
+    </style>
+</head>
+<body>
+    <div class="vansh">
+        vansh sharma the only one
+    </div>
+    <div class="kalu">
+        <div class="p">
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi adipisci porro libero excepturi vero amet? Quo nihil illum adipisci dolorum! Pariatur praesentium dolores vel atque quo, eius veritatis mollitia voluptate consequatur, eveniet natus accusamus!
+            <div class="k">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsa molestiae nostrum? Atque, nemo quaerat officiis animi necessitatibus sint quasi perferendis totam nulla eaque? Tempora incidunt qui maxime cumque reprehenderit?
+            </div>
+        </div>
+
+           
+        </div>
+        <div class="mycutie">
+            vansh sharma is very handsome
+        </div>
+
+</body>
+</html>

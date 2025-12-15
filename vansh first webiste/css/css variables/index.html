@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variables</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0; 
+        }
+
+        :root {
+            /* VARIABLES */
+            /* variable can hold  different types of value such as 
+            1. background url 
+            2. strings
+            3. Numbers*/
+
+            --vansh-color: rgb(134, 212, 243);
+            --bete-color: rgb(119, 194, 194);
+            --defmar: 1px 25px;
+            --defop: 0.5;
+            /* above i have created different variables u can use them in different places as per your need  */
+
+            /*  mainly  they are used for colors to change the theme of the website instantly */
+
+        }
+
+        .nav {
+            background-color: var(--vansh-color);
+
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            opacity: var(--def);
+
+        }
+
+        li {
+            margin: var(--defmar);
+        }
+
+        .container {
+            background-color: var(--bete-color);
+        }
+
+        ul li:first-child {
+            --vansh-color: rgb(243, 134, 198);
+            background-color: var(--vansh-color, blue);
+            /* this will get overwite by the gobal variable */
+            /* Blue is the secondary color if in any case our decided color is not there it will show blue color */
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul>
+            <li>Home</li>
+            <li> About us</li>
+            <li>Contact us</li>
+        </ul>
+    </nav>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt rerum nulla eaque impedit possimus ea enim
+        dolorum at quos, rem, voluptatem placeat alias quaerat. Libero doloribus nemo reiciendis ipsam incidunt.
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* First child */
+        /* .box:first-child{
+            background-color: red;
+        } */
+
+         /* first-line */
+
+        /* .box:first-line{
+            color: green;
+        } */
+
+        /* First-letter */
+        /* .box:first-letter{
+            color: rgb(0, 0, 255);
+        } */
+
+         /* Universal selector with other selector */
+
+         /* boxes ke andr sabka color blue kardo aur border dedo 2px solid black ye bola hai */
+         .boxes *{
+            /* background-color: aqua; */
+            border: 2px solid black;
+
+         }
+         /* Attribute selectors */
+         /* [data-color="primary"]{
+            padding-top: 12px;
+         } */
+
+         /* Grouping of selectors */
+         /* .box ,    a ,  p , [data-color="primary"]{
+            padding-top: 22px;
+         } */
+
+         /* n-th child  */
+
+         /* Even */
+         /* .box:nth-child(even){
+            background-color: blue;        
+         } */
+
+          /* Odd */
+         /* .box:nth-child(odd){
+            background-color: blue;        
+         } */
+
+         /* 1,2,3 */
+
+         /* .box:nth-child(1){
+            background-color: blue;  */
+
+         /* .box:nth-child(2){
+            background-color: blue;  */
+
+         /* .box:nth-child(3){
+            background-color: blue;  */
+
+            /* nth-last-child */
+
+            /* last child means it will count from bottom  */
+            /* .box:nth-last-child(1){
+                background-color: pink;
+            } */
+
+
+            /* IMPORTANT */
+
+            /* BEFORE AND AFTER */
+
+            /* Before and after make us add content dynamically through css */
+
+            .boxes::before{
+                content: "vansh sharma is handsome";
+                color: green;
+
+            }
+            .boxes::after{
+                content: "vansh sharma is just like a hero";
+                color: pink;
+            }
+            /* Selections */
+
+            /* you can add selection for all text without marking class */
+            ::selection{
+                color: aqua;
+                background-color:  rgb(0, 0, 0);
+            }
+            input::placeholder{
+                color: aqua;
+                background-color: black;
+                font-size: 22px;
+            }
+
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hey my name is vansh sharma</div>
+        <div class="box">Hey my name is vansh sharma</div>
+        <div class="box">Hey my name is vansh sharma</div>
+    </div>
+    <input type="text" name="vansh" id="kutaa" placeholder="Enter you name here">
+</body>
+</html>

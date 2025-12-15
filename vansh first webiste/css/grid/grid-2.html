@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid-2</title>
+    <style>
+
+        body{
+            color: white;
+            background-color: black;
+        }
+        .conatainer{
+            border: 2px solid rgb(2, 210, 242);
+            /* height: 758px;
+            width: 80vw; */
+            display: grid;
+            grid-template-areas: "nav nav nav"
+                                 " side article article"
+                                  "footer footer footer"
+                                  "hero hero hero";
+                                  /* this will divide content according to the given instructions and the next line will go on the next line in the layout to */
+
+        }
+        .items{
+            border: 2px solid red;
+            height: 55px;
+            /* width: 93px; */
+
+        }
+        .item-1{
+            grid-area: nav;
+            /* this is the command to confirm the area item has to use */
+        }
+        .item-2{
+            grid-area: side;
+        }
+        .item-3{
+            grid-area: article;
+        }
+        .item-4{
+            grid-area: footer;
+        }
+        .item-5{
+            grid-area: hero;
+        }
+        /* .item-6{
+            grid-area: nav;
+        }
+            THis will make it overlap on item-1 nav */
+
+    </style>
+</head>
+<body>
+    <div class="conatainer">
+        <div class="items item-1">1  nav</div>
+        <div class="items item-2">2  side </div>
+        <div class="items item-3">3 article</div>
+        <div class="items item-4">4 footer </div>
+        <div class="items item-5">5 hero</div>
+        <div class="items item-6">6 Extra...</div>
+    </div>
+</body>
+</html>

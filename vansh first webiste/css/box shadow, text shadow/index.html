@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow , text shadow</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .vansh {
+
+            border: 2px solid black;
+            box-shadow: 3px 9px 20px 2px #fd0000;
+
+        }
+
+        .simi {
+
+            text-shadow: 5px 4px 4px #e4cb09;
+            outline: 2px solid black;
+            outline-offset: 12px;
+            border: 2px solid pink;
+            border-radius: 40px;
+
+            /* difference between outline and border */
+            /* 
+            1. Position: Outlines don't take up space; they' re drawn around the element, outside of any border. 
+            2. Offset: Using the outline-offset property, you can set the space between an outline and the edge or border of an element.  3,3. Width: Borders can have varying widths on different sides, outlines have a uniform width. 
+            4. Rounded Corners: Borders can have rounded corners using border-radius, while outlines generally cannot */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="vansh">
+
+        Hey i am a box
+    </div>
+    <br>
+    <br>
+    <p class="simi">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, adipisci? Veritatis distinctio repudiandae
+        numquam soluta optio molestiae sed nihil eius dolores fugiat porro adipisci, aspernatur expedita, tempore,
+        accusantium cupiditate corrupti similique quasi nobis labore?
+    </p>
+</body>
+
+</html>

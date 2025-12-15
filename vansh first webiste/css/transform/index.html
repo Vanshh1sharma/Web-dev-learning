@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <!-- /* Transform - Jis item pr lagaoge ye usko rotate, scale etc change kardega  */
+       transform - properties 
+       1. Rotate  = rotate on the axis 
+       2. scale = keech ke bada kardega scale attribute
+       3. skew = 3d me keeche ga 
+       4. translate = It will move it in the axis u determined
+      -->
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        .box{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid black;
+        
+        }
+        .chotabox{
+            height: 10vh;
+            /* margin: 12px ; */
+            background-color: wheat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 10vw;
+            border: 2px solid purple;
+            /* Rotate */
+            /* IT will rotate the box 
+            
+            IT  has to famous units 
+            1. Degree = 10deg , 20deg , 30deg , 40deg ....
+            2. turn = 1 turn = 360deg , 0.5turn = 180deg , 0.25turn = 90deg
+            */
+
+
+            /* transform: rotate(180deg); */
+            /* transform: rotate(0.2turn); */
+
+            /* Rotating on x,y and z axis */
+             
+            /* transform: rotateX(45deg); */
+            /* transform: rotatey(45deg); */
+            /* transform: rotatez(45deg); */
+
+            /* scale */
+            /* this will scale the box  */
+            /* transform: scale(1.5);  */
+            /* scale X
+               scale y
+               scale z*/
+
+               /* transform: scaleX(1.2); */
+               /* transform: scaley(1.4); */
+
+               /* Note*/
+    
+                /*There is nothing like scalez-z */
+                
+
+                /* skew */
+                /* skew ka mtb kisine use top left aur right bottom se pakad kar keech diya ho */
+
+                /* transform: skew(20deg); */
+                 /* skew x and y but remmeber  skew is not defined in z-axis  */
+
+                 /* NOTE  */
+
+                 /* skew - z is not defined  */
+
+
+
+                 /* MOST USED PROPERTY IS ("translate") */
+
+                 /* transform: translate(34px); */
+                /* translate moves the objects in the indiviual directions  */
+
+                 /* transform: translateX(34px); */
+                 /* transform: translatey(34px); */
+
+                 /* OR u can use % sign instead of px */
+
+                 /* transform: translateX(34%); */
+                 /* transform: translatey(34%); */
+                 /* transform: translatez(34%); */
+
+                 /* If you have to use multiple transform properties in a single line u can  by just giving space in between other others command for example */
+
+                 /* transform: translateX(23px) skew(20deg) translateY(23%); */
+
+                 /* Transform is mainly 
+                 In the situation when we are making navabr and we want ki navbar chupjae  */
+
+                 /* for example */
+
+                 /* transform: translatey(-100%); */
+                 /* chup gya */
+
+                 /* Transform-origin */
+
+                /* This is center of the rotation iske about rotation hoti hai */
+                /* for example */
+                 
+                transform: rotate(45deg);
+                 transform-origin: 0% 0%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="chotabox">
+            box-1
+        </div>
+    </div>
+</body>
+</html>

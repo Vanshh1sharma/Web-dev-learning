@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and clear</title>
+    <style>
+        /* Note */
+        /* Float is not used in making modern website */
+        /* however you must know it cause it can help you to handle old website and can be asked in interviews */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            border: 2px solid black;
+            display: flow-root;
+            /* display: flow-root;  we apply this when our image overflowing  from parent container this make it adjust accordingly  */
+
+        }
+        div img{
+
+            float: left;
+
+            /* float: left; will make the element float in left and allow the other element to come on right 
+            side  */
+
+            /* float: right; */
+
+            /* float: right; will make the element float in Right and allow the other element to come on Left 
+            side  */
+            
+
+        }
+        .card{
+            border: 2px solid red;
+            /* clear: right; */
+        }
+        .card:nth-child(5){
+            background-color: aqua;
+            /* clear: right; */
+            /* clear right will say that this element does not allow anyone to float on right  */
+             /* Changing the property */
+            /* if we make its property float left than it will float over this text cause it says clear =  right , left is allowed  */
+
+             /* Clear : Both; */
+            /* Now it don't allow on any side the text will shift downside */
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEOBcwT_USk1mbaX_TBBSk8KIt4mq8pViNlw&s" alt="spider man ">
+       <div class="card">card 1</div>
+       <div class="card">card 2</div>
+       <div class="card">card 3</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nulla non in ullam nostrum? Ad totam minima veritatis, distinctio asperiores voluptatum labore consequatur, vero quas, recusandae quibusdam exercitationem? Veritatis impedit tempore dolores, magnam officiis adipisci id accusantium sunt ab, explicabo autem fugiat magni, nobis temporibus culpa tenetur maiores ipsam ea repellat! Ad similique voluptates architecto voluptas quod? Voluptatem molestias eum amet fugit, velit iste tempora ducimus ea ut? Perspiciatis doloribus, sit quis deleniti facilis natus, eos, ipsum quod explicabo nobis similique sequi possimus tempore? Praesentium incidunt, eum, alias cumque totam ducimus quos, ab ad eius magni voluptate est labore quibusdam. Unde reiciendis nobis voluptate amet ipsum quas repudiandae perspiciatis dolor sint possimus iste inventore velit non, omnis sunt rerum laboriosam eos, doloremque delectus earum fugiat! Temporibus, eos velit atque incidunt fuga, quos quibusdam laudantium ratione reiciendis fugiat iusto. Dolor nemo molestias officia perferendis placeat omnis corrupti distinctio quibusdam voluptatibus numquam aliquid facere tempore nisi vitae, repudiandae consectetur quidem harum in! Sapiente, odit tempora. Iste illum minima adipisci laudantium nam error labore doloremque odio, quibusdam eligendi sint quo, cum, hic voluptatum numquam omnis repellat voluptates sequi minus quisquam nihil deleniti repellendus non. Libero odit quasi corrupti temporibus tenetur nesciunt totam consectetur ut rem quam eos, qui explicabo saepe consequatur expedita architecto sint aut alias minima quidem atque et quod. Impedit modi labore dolorem.!</div>
+    </div>
+</body>
+</html>

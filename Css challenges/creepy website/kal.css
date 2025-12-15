@@ -1,0 +1,120 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    /* Body color */
+    --text-color:  white;
+    --background-color: black;
+
+    /* Navbar color */
+    --nav-color: rgb(227 106 106 / 60%);
+    --venom-color:rgb(209, 17, 17);
+
+    /* Boxes color */
+    --badabox-color:  #460000;
+    
+    /* Sigma container */
+    --sigma-backgroundcolor:white;
+    --sigma-color:white;
+}
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    min-height: 100vh;
+}
+ul{
+    display: flex;
+
+}
+ul li{
+    margin: 0px 50px;
+    list-style: none;
+    font-size: 18px;
+    padding: 1px 6px;
+}
+.nav{
+    background-color: var(--nav-color);
+    padding: 30px 12px;
+    top: 0px;
+    position: sticky;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    
+}
+ul li a:hover{
+    cursor: pointer;
+    color: var(--venom-color);
+    box-shadow: 3px 9px 20px 2px #fd0000;
+   
+
+}
+.badabox{
+     border: 2px solid white;
+     width: 90vw;
+     height: 555px;
+     display: flex;
+     margin: auto;
+     background-color: var(--badabox-color);
+ }
+
+.boxes{
+    
+    text-align: center;
+    width: 345px;
+    height: 444px;
+    margin:  auto;
+}
+
+.box1{
+    border: 2px solid rgb(11, 205, 248);
+    background-color: red;
+    
+}
+.box2{
+    border: 2px solid rgb(11, 205, 248);
+    /* border: 2px solid rgb(237, 20, 215); */
+     background-color: #0dd7ff;
+}
+.sigma{
+    background-color: var(--badabox-color);
+    color: var(--sigma-color);
+    width: 80vw;
+    /* height: 120px; */
+    border-radius: 22px;
+    margin: 35px auto;
+    padding: 23px 33px;
+    text-align: center;
+}
+    
+
+.sigma h2{
+         top: 12px;
+}
+.support{
+    
+    background-color: #0dd7ff;
+    z-index: 1;
+}
+.img{
+    /* position : fixed me bottom define karna padta hai */
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    border: 2px solid aqua;
+}
+footer{
+    height: 56px;
+    background-color: var(--badabox-color);
+}
+.simi{
+
+   margin: 1px 12px;
+}
+
+    

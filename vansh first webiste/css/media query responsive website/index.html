@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <style>
+        /* NOTE */
+        /* Media query is used to make responsive websites */
+        body{
+            background-color: aqua;
+
+        }
+        /* Syntax of media query */
+          /* @media not|only mediatype and (expressions) {
+         CSS-Code; */
+          
+         /* NOT AND ONLY */
+
+         /* not is used when you don't want to show something on any specific screen */
+         /* only is used when you want to show on only that screen  */
+         /* MAiNLY ("only is used in the website") */
+
+         /* MEDIA TYPE */
+
+         /* There are different types of mediatype */
+         /* ALL =  To show on all devices
+            Print = To show on printers
+            Screen = To show on screens
+            Speech devices = To show to those who can't see with eyes */
+
+            /* Condition or Expression */
+
+            /* max-width = If the content  goes above max-width it will apply normal css 
+            
+            Symmary
+            max-width =  if it is smaller than max-width it apply media-query conditions...
+            But 
+            IF it cross max-width it will not apply media-query*/
+
+            /* min-width = If the content width is smaller than min-width , it will apply media-query conditions */
+            .vansh{
+                border: 2px solid black;
+                width: 233px;
+                height: 134px;
+                background-color: brown;
+                margin: 12px 74px;
+            }
+            .container{
+                border: 2px solid black;
+                display: flex;
+                justify-content: center;
+            }
+
+            @media  screen and (orientation:portrait) {
+                
+            /* Oreintation */
+
+                /* orientation : landscape means if the width is greater than the height it will work */
+
+                /* orientation : portrait means if the heigth is greater than width it will work */
+
+
+                body{
+                    background-color: blueviolet;
+                }
+                
+            }
+
+            /* 445 width is a arbitary constant smalller width than 445 is consider mobile phones and greater than 445 is consider as tablets or similar is 750 and greater than is consider as laptop and pc and different resolution of monitors */
+
+
+        /* @media only screen and (max-width:445px){
+            body{
+                background-color: greenyellow;
+            }
+            .container{
+               flex-direction: column;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="vansh vansh1">box1</div>
+        <div class=" vansh avansh2">box2</div>
+        <div class="vansh vansh3">box3</div>
+    </div>
+</body>
+</html>

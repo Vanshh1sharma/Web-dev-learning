@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            background-color: rgb(226, 118, 35);
+            width: 33vw;
+            height: 12vh;
+
+        }
+        .box{
+           
+            width: 12vw;
+            height: 10vh;
+
+            /* animation */
+
+            /* animation -  animation property helps us to animate movements  */
+
+            /*  Difference between animation and transition  */
+
+            /* transition is used to make simple animation */
+            /* animation is used to make complex animation */
+
+            /* properties of animations  */
+
+            /* animation-name = give the name of animation you applied (animation = indentifier name) */
+            
+            /* animation-duration =  kitne time ke liye chalana hai */
+
+            /* animation-timing-function = ease-in-out  wagara or you can create your own animation */
+
+            /* animation-iteration-count = kitni baaar animation chalana hai */
+
+            /* animation-delay = kitne time ke delay ke baad chalana hai */
+            
+            /* animation-direction = isse aap animation ki direction change kar sakte ho */
+
+            /* animation-name: vanshbhai;
+            animation-duration: 3s;
+            animation-timing-function: cubic-bezier(0.42, 0, 0, 1.11);
+            animation-iteration-count: 1;
+            animation-delay: 1s ; */
+
+            /* animation-direction: alternate-reverse; */
+            /* peeche se start hokar aage jaega fir peeche jaega uske baad */
+
+
+            /* animation-direction: alternate; */
+            /* aage peeche jaega */
+
+            /* animation-play-start */
+            /* it has 2 value paused and runnning */
+
+            /* animation-play-state: paused; */
+             /* IT will pause the animation in the middle of animation */
+
+             /* NOte - generallly ham javascript se pause karte hai animation */
+
+
+            /* animation-play-state: running; */
+            /* running me chalta rhatta hai */
+
+            /* animation-fil-mode */
+            /* delay me kaam karega */
+
+
+            /* animation-fil-mode property */
+
+            /* animation-fill-mode: backwards; */
+            /* from ki property lagae ga uske baad chal kar wapas ajaegaa */
+
+            /* animation-fill-mode: forwards; */
+            /* animation chalega fir last me jakar ruk jaega */
+            /* or
+            you can say bhul jaega starting wali properties */
+
+
+            
+            /* animation-name: vanshbhai;
+            animation-duration: 3s;
+            animation-timing-function: cubic-bezier(0.42, 0, 0, 1.11);
+            animation-iteration-count: 1;
+            animation-delay: 1s ; */
+
+            /* ALL THESE Properties in a single line */
+            
+            /* animation : name duration timing-function delay iteration-count direction fill-mode */
+
+             animation: vanshbhai   3s ease-in-out  1s  infinite alternate  forwards , pagal   3s ease-in-out  1s  infinite alternate  forwards; 
+
+
+
+                }
+
+                @keyframes vanshbhai {
+
+                 from{
+                       background-color: red;
+                 }  
+                 
+                 to{
+                    background-color: pink;
+                    transform: translateX(114px);
+                 }
+                }
+
+                /* You can make multiple animation */
+
+                @keyframes pagal {
+
+                    0%{
+                        transform: rotate(45deg);
+                    }
+                    20%{
+                        transform: rotate(90deg);
+                    }
+                    40%{
+                        transform: rotate(180deg);
+                    }
+                    
+                    60%{
+                        transform: rotate(270deg);
+                    }
+                    80%{
+                        transform: rotate(310deg);
+                    }
+                    100%{
+                        transform: rotate(360deg);
+                    }
+                    
+
+                    
+                }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</html>

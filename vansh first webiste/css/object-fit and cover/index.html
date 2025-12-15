@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object fit and cover</title>
+    <style>
+        .container{
+            width: 499px;
+            height: 455px;
+            background-color: black;
+            border: 2px solid white;
+
+            /* background-image */
+            /* background me image lagti hai and no one can download it from there */
+            background-image: url(bila.jpg);
+
+            /* background-image properties */
+
+                 /* Center  */
+                 /* center pr ajaegi image */
+            background-position: center center;
+
+            /* no-repeat */
+            /* choti image lagao ge toh repeat hogi */
+            /* to prevent that from happening we use no-repeat  */
+
+            background-repeat: no-repeat;
+            
+            /* repeat-x */
+            
+            /* You can add no-repeat in any axis you want */  
+            /* ise x-axis me repeat nahi hoga */
+            /* background-repeat: repeat-x; */
+            
+            
+            /* repeat-y */
+            /* ise y-axis me repeat nahi hoga */
+            /* background-repeat: repeat-y; */
+               
+            /* background-clip */
+            /* iske baare me online padlena bkl  */
+            /* background-clip: border-box; */
+
+
+
+        }
+        img{
+            width: 499px;
+            height: 455px;
+            /* height aur width dene se iska aspect ratio karab hogya */
+            /* So we can do is ki isko object-fit property dedo usse iska aspect ratio nahi begdega */
+            /* Object-fit properties  */
+            
+            /* cover */
+            /* ab isse ye jitni height tumne width tumne image ko di hai usko ye cover karlega   */
+
+            /* ye image ko crop kardega */
+            object-fit: cover;
+            
+            /* you can control which part to crop and which part to show */
+              
+            /* object-position: top right; */
+            /* object-position: top left; */
+            /* object-position: bottom left; */
+            /* object-position: bottom right; */
+               
+            /* OR you can do it by writing it in px */
+            
+            /* this will also work */
+            /* object-position: 12px 30px; */
+            
+            /* OR you can do it by writing it in px */
+
+            /* isko karne se ye center wala portion dekhaega */
+            /* Object fit ko  "cover"  karna padega */
+            /* object-position: 50% 50%; */
+
+            /* Object-fit ki default property hoti hai fil */
+
+            /* fill - isse woh img ki height aur width me fit hojaega */
+            /* object-fit: fill; */
+             
+
+                
+            /* contain */
+            /* contain ye image ko crop nahi karega  aur jo jagah extra bachegi usko bachne dega */
+
+            /* object-fit: contain; */
+
+
+            /* scale-down */
+            /* isse image choti hojaegi */
+            
+            /* object-fit: scale-down; */
+
+            /* none */
+            /* reset karni hai property toh scale-down */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- yo you can also add image to background by css and cool part is no one can it from there  -->
+        <!-- <img src="transformer.jpg" alt=""> -->
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        
+        .container{
+            border: 2px solid black;
+            display: flex;
+            /* display flex will makes your item left to right as assuming that you are using flexbox you need something other than default */
+            height: 80vh;
+            /* To make item horizontal center we use - justify-content=center; */
+            justify-content: center;
+            /* To make item vertical center we use - align-item = center; */
+            align-items: center;
+            /* Note all these properties are used in containers not in items */
+
+            /* justify-content = properties  */
+            /* This will change items horizontally */
+             
+             /* Center */
+             /* This will make item center horizontally */
+
+            /* Flex-End */
+            /* This will make all the items to go on the right or on the End */
+            /* justify-content: flex-end; */
+
+            /* flex-start */
+            /* this will make all the item to go on the left or on the start */
+            /* justify-content: flex-start; */
+
+            /* Space-around */
+            /* this will add space to the items from all sides*/
+            /* justify-content: space-around; */
+
+            /* space-between */
+            /* this will add space in between of the items  */
+            /* justify-content: space-between; */
+
+            /* space-evenly */
+            /* This will distribute the space evenly to all the items */
+
+            /* Align-item = properties */
+            /* This will change items vertically */
+
+            /* Flex-End */
+            /* This will make all the items to go on the bottom or on the End */
+            /* align-items: flex-end; */
+
+             /* flex-start */
+            /* this will make all the item to go on the top or on the start */
+            /* align-items: flex-start; */
+
+            /* center */
+            /* this will make item vertically center */
+            /* align-items: center; */
+            
+
+            /* Baseline */
+            /* this will make items come on a base where all the centers meet each other */
+
+            /* align-items: baseline; */
+
+
+
+
+            /* Flex-direction */
+            /* flex-direction decide that which direction our items will float */
+            /* by default our items will float to right-direction */
+
+            /* flex-direction: column; */
+
+            /* This will make items align from top to bottom  */
+            
+            /* flex-direction:column-reverse; */
+
+            /* This will make items align form Bottom to Top*/
+
+            /* flex-direction:column-reverse; */
+            
+            /* flex-direction: row; also this default direction */
+            /* This make items align in rows or u can say from Right to left  */
+            
+            /* flex-direction: row; */
+
+
+            /* flex-direction: row-reverse; */
+            /* This will make items align in left to right or u can say row-reverse  */
+            /* flex-direction: row-reverse; */
+
+            /* flex-direction theory */
+            
+            /* the direction we determined is known as main axis and perpendicular to that is cross axis  */
+            /* u can see the pdf attached to this folder */
+
+            /* Now justify-content and align-item  */
+            /* works according to these axis  */
+
+            /* justify-content: center;
+            align-items: center; 
+            will be center in the main-axis */
+
+            /* flex-wrap : wrap */
+            /* If your content is overflowing from the box , u can apply this and evrythings comes back to normal */
+            flex-wrap: wrap;
+
+                        /* flex-wrap : wrap-reverse
+                        kuch nahi bc ulta wrap karega bas */
+                        /* flex-wrap: wrap-reverse; */
+
+                         /* flex-wrap : nowrap */
+                         /* it is the default property wrap nahi karega agr no wrap karoge toh */
+                         /* flex-wrap: nowrap; */
+
+
+            /* align-content is used to center multiple lines */
+            align-content: center;
+            /* you can set align-content: center ; 
+                                           flex-start
+                                           flex-End */
+            
+            
+
+            /* NOte 
+            align-item = is used to center one line
+            align-content = is used to center multiple lines*/
+
+            /* flex-flow */
+            /* THis property is used to assign both values in a single command*/
+            /* flex-flow: row wrap; */
+
+            /* gap */
+            /* this gap in between of the elements */
+
+            /* gap: 23px; */
+
+            /* Row-gap */
+            /* this will gap in between rows */
+            /* row-gap: 23px; */
+
+
+             /* column-gap */
+             /* this will gap in between columns */
+             /* column-gap: 23px; */
+
+
+        }
+        
+        .item{
+            width: 67px;
+            height: 78px;
+            background-color: pink;
+            border: 2px solid black;
+        }
+        .order-1{
+            order: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item order-1">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+#jalwa{
+    background-color: rgb(240, 60, 0);
+
+}
+#handsome{
+    color: pink;
+}
+.hero{
+    font-size: 45px;
+}
+
+.heroine{
+
+    background-color: grey;
+}
+/* id is prefered over class */

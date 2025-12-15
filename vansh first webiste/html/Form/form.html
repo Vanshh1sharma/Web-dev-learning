@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEts create a form</title>
+</head>
+
+<body>
+    <h1> Webiste to create a form</h1>
+    <form action="">
+        <div>
+            <!-- type = text -->
+            <label for="username">Naam likhdo</label>
+            <!-- attribute me autofocus required and pattern="" dal sakte ho pattern se tum sirf 
+         us pattern ki cheeze hi dal paoge -->
+            <input type="text" name="username" id="vansh" placeholder="Enter your username" autofocus required>
+        </div>
+        <!-- type = radio -->
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
+        </div>
+        <!-- type = checkbox -->
+        <div>
+            <label for="vansh">Sab Badiya</label>
+            <input type="checkbox" name="vansh" id="chak">
+        </div>
+        <!-- text area  -->
+        <div>
+            <label for="kaliya">Do shabad</label>
+            <br>
+            <textarea name="kaliya" id="tikaa" rows="13" cols="28"> Enter your Naam</textarea>
+        </div>
+
+        <div>
+            <label for="Ladkiya">Apko kaunsi sabse achi lagti hai</label>
+            <select name="Ladkiya" id="hero">
+
+                <option value="samridhi">samridhi</option>
+                <option value="Riya">Riya</option>
+                <option value="Simran">Simran</option>
+
+            </select>
+        </div>
+        <!-- type = password -->
+        <div>
+            <label for="password"> Type your password</label>
+            <input type="password" name="password" placeholder="Enter Password">
+        </div>
+        <!-- type = submit -->
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+        <!-- button -->
+        <div>
+            <button type="button">Click Me </button>
+        </div>
+        <!-- type = file -->
+        <div>
+            <label for="fileupload">Upload your file here</label>
+            <br>
+            <input type="file" name="fileupload">
+        </div>
+         <!-- type = range -->
+        <div>
+            <label for="volume">You like me how much</label>
+            <br>
+            <input type="range" name="volume" min="0" max="100">
+        </div>
+        <!-- type = number -->
+        <div>
+            <label for="quantity"> Kitne baap ka hai tu</label>
+            <input type="number" name="quantity" min="1" max="10">
+        </div>
+        <!-- type = email -->
+        <div>
+            <input type="email" name="email" placeholder="Enter Email">
+        </div>
+        <!-- Type = search -->
+        <div>
+            <label for="query">let me help You</label>
+            <input type="search" name="query" placeholder="Search">
+        </div>
+        <!-- type = URL -->
+        <div>
+            <input type="url" name="website" placeholder="Enter URL">
+        </div>
+         <!-- Type = date -->
+        <div>
+            <label for="birthdate"> Date of birth </label>
+            <input type="date" name="birthdate">
+        </div>
+
+    </form>
+</body>
+
+</html>

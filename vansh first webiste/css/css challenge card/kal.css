@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.container{
+    border: 2px solid white;
+    background-color: rgb(25, 24, 24);
+    border-radius: 12px;
+    width: 20vw;
+    min-height: 60vh;
+    margin: 100px auto;
+}
+.img{
+    padding: 20px 40px;
+}
+.img img{
+    border-radius: 125px;
+    opacity: 0.5;
+}
+.box{
+    border: 2px solid black;
+    margin: 2px 8px;
+    border-radius: 4px;
+}
+.box:hover{
+    background-color: rgb(66, 66, 57);
+    cursor: pointer;
+}
+.vansh{
+    
+    margin: 20px 33px;
+}
+.venom{
+    text-align: center;
+    margin: 26px auto
+}
+p{
+    font-size: 15px;
+    padding: 0px 33px;
+    margin: 0px auto;
+
+}
+.creative{
+    text-decoration: none;
+    border: 2px solid rgb(126, 126, 126);
+    border-radius: 5px;
+    color: darkred;
+    background-color: rgb(25, 24, 24);
+   
+    
+}
+.submit{
+    text-align: center;
+    border-radius: 1px;
+    margin: 25px auto;
+    
+   
+}
+
+.creative:hover{
+    box-shadow: 2px 1px 20px 2px #f90404;
+    
+   
+}

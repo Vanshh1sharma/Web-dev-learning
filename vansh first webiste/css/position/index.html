@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            border: 2px solid rgb(255, 0, 204);
+            height: 550vh;
+            width: 90vw;
+            margin: 23px auto;
+            /* position: absolute; */
+             /* transform , filter and prespective properties can also make \parent  appear as positioned */
+            /* transform: translate(0); */
+            /* filter: invert(0); */
+
+        }
+
+        .box {
+            border: 2px solid black;
+            width: 80vw;
+            height: 20vh;
+            margin: 3px 38px;
+            padding: 0px 3px;
+
+
+        }
+
+        .box1 {
+            
+            background-color: aqua;
+            /* position -  is static by default and in position static u can't give top , bottom , left and right = you can either set top or bottom both can't be set at the same time and same goes with left and right */
+            /* position: relative;
+            z-index: 1; */
+            /* position : fixed will make the box fixed in the screen no matter how much you scroll */
+            /* position: fixed;
+             /* me bottom define karna padta hai compulsory */
+              /* bottom: 0px;  */
+        }
+
+        .box2 {
+            background-color: rgb(95, 232, 95);
+            /* position: relative; */
+            /* position - relative  it will make the box move from its place and u can apply top , bottom , left and right */
+            /* top: 54px;
+            left: 44px; */
+            /* ("if boxes come over each other")
+            you can apply z-index on the specific box you want up
+            "but" 
+            the box position should not be static ("In static position z-index don't works")*/
+
+        }
+
+        .box3 {
+            background-color: rgb(230, 73, 12);
+            /* position: relative;
+            z-index: 1; 
+            dusre box se zada honi chaiye*/
+
+            /* position- absolute, Depends on the parent , if the parent have position other than static, then it will move according to him
+            if main parent don't have than it will go to 
+            "Dada ji" which is body if body don't have positon element 
+            then it will go to great grand father which is html and if html dont have position element then it will have no option other than move according to him cause there is no one above html   */
+            /* position: absolute; */
+            /* top: 0px;
+            left: 23px;
+            */
+        }
+
+        .box4 {
+            background-color: antiquewhite;
+            /* position -  sticky will me make fixed on the top when you scroll across them */
+            /* helps to create nav mainly */
+            /* position: sticky; */
+           /* width: 100%;
+           height: 111px;
+           top: 0px;  */
+           /* ("Top:0px is mandatory , warna position = sticky will not") */
+        }
+        /* Note */
+        /* If position of child is declared absolute 
+        then no matter what position you give to parent it will work , but , you have to  write position = xyz */
+
+
+
+        /* Exception */
+
+        /* transform , filter and prespective properties can also make \parent  appear as positioned */
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1">I am box 1</div>
+        <div class="box box2">I am box 2</div>
+        <div class="box box3">I am box 3</div>
+        <div class="box box4">I am box 4</div>
+    </div>
+</body>
+
+</html>

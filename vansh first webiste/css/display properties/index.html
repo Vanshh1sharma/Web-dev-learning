@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display properties</title>
+    <style>
+        .box{
+            border: 2px solid yellow;
+            display: inline-block;
+            padding: 45px;
+            margin: 34px;
+             /* you can see  paddind is not given from upside because display= inline does not allow to change from top same with margin*/
+             /* but if you make display = inline-block everything will be fine */
+
+        }
+        .box1{
+            
+            background-color: aqua;
+            /* display: inline-flex; */
+            /* justify-content: center; */
+            /* display: none; */
+            /* diisplay-none make the content disapear and remove the space */
+            /* visibility: hidden; */
+            /* visibility: hidden; make the content disapear but its space is still there */
+
+        }
+
+        .box2{
+            background-color: brown;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1 ">
+        I am a box
+    </div>
+    <div class="box box2"> I am another box </div>
+</body>
+</html>

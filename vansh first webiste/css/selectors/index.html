@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectors</title>
+    <style>
+         /* Element selectors */
+         body{
+            background-color: rgb(104, 94, 94);
+         }
+         /* div{
+            color: red;
+         } */
+         /* drawbacks of element selectors is dusra div bhi red hojaega */
+
+         /* class selectors */
+         .kaliya{
+            color: aquamarine;
+         }
+
+         /* id selectors  */
+         #bete{
+            color: bisque;
+            background-color: aquamarine;
+         }
+         /* child selectors */
+         div > p{
+            color: blue;
+            background-color: rgb(144, 228, 144);
+         }
+
+         /* desecendent selectors */
+         div p{ 
+            font-size: 23px;
+            color: rgb(0, 0, 0);
+            background-color: brown;
+         }
+         /* universal selectors */
+         *{
+            margin: 0px;
+            padding: 0px;
+
+         }
+         /* pseudo selectors */
+         a:visited{
+            color: yellow;
+         }
+         a:link{
+            color: greenyellow;
+         }
+         
+         a:active{
+            background-color: pink;
+         }
+        
+         a:hover{
+            background-color: palevioletred;
+        
+         }
+
+         p:first-child{
+             background-color: rgb(108, 246, 96);
+         }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="kaliya" id="bete">
+        <h1>vansh sharma</h1>
+        <article>
+            <p>beaty and beast</p>
+        </article>
+    </div>
+    <span class="hero" id="lal">
+        <p> I am becoming a good programer</p>
+    </span>
+    <div>
+        <h2>waaaaaaaaaaaah</h2>
+    </div>
+    <a href="https://www.facebook.com/" target="_blank">Go to facebook</a>
+
+    <a href="https://www.youtube.com/"> Go to youtube</a>
+    <main>
+        <p> I am first</p>
+        <p>I am second</p>
+    </main>
+ 
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css boxmodel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: aqua;
+
+        }
+
+        .box1 {
+            color: red;
+            padding: 12px;
+            margin: 5px;
+            height: 64px;
+            border: 2px solid black;
+            /* by giving these instruction without adding box-sizing wil give width of only for  content  */
+            /*  the main formula Is */
+            /* Total Width = Width+Left Padding+Right Padding+Left Border+Right Border+Left Margin+Right Margin 
+            Total Height= Height+Top Padding+Bottom Padding+Top Border+Bottom Border+Top Margin+Bottom Margin  */
+
+            box-sizing: border-box;
+            /* box-sizing dont include margin in the formula rest is same */
+            /* by giving box sizing box sizing box-sizing border box we can appply the above formula */
+
+            /* Now the new concept "margin collapse " */
+
+
+        }
+
+        .box2 {
+            color: green;
+            padding: 12px;
+            margin: 15px;
+            height: 64px;
+            border: 2px solid black;
+            box-sizing: border-box;
+
+            /*
+            
+            * Now you can see margin is given both the div but it doesnt look it add there
+            
+            
+           * The box with the greater margin keeps the margin 
+
+           * In above case margin is considered 15px because box 2 have the bigger margin
+            */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        vansh sharma
+    </div>
+    <div class="box box2">I am a box </div>
+
+    <h2>Margin collapse example</h2>
+    <img src="margin collapse example.png" alt="bete margin wali photo kho gai">
+</body>
+
+</html>

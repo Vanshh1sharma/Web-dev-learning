@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition PROPERTY</title>
+    <style>
+        .container{
+            background-color: beige;
+            width: 50vw;
+            height: 20vh;
+        }
+
+        .box{
+            background-color: aqua;
+            width: 7vw;
+            height: 3vh;
+
+            /* transition-property */
+
+             /* transition ek cheez se dusri me switch karne smoothness dilwata hai */
+
+             /* Transition consist of 4 properties */
+
+             /* transition-property - kis cheez pr lagana hai woh hai ye
+             transition-duration: = kitne seconds ke liye lagana hai ;
+             transition-timing-function = transition kasa hona chaiye
+             transition-delay - kitne seconds ka delay hona chaiye */
+
+             /* practical */
+
+            /* transition-property: all; */
+            /* all will add the transition to all the property */
+             
+            /* indiviually targeting items */
+            /* transition-property: background-color , transform;
+
+             transition-duration: 3s;
+             transition-timing-function: ease-in;
+             transition-delay: 1s; */
+
+              /*  U can also write all these properties in one line */
+
+              /* transition:  transform 3s ease-in-out  1s ; */
+                  
+              /* ease-in */
+              /* ease-in wagara jasi property aap kud bhhi bana sakte ho
+              inspect element me jakar grap change karke  */
+
+              /* transition-property */
+              /* transition-property aap sab pr bhi laga sakte ho aur kuch indiviual pr bhi */
+        }
+
+        .translate{
+            transform: translatex(14vw) translateY(4vh) scale(1.5);  
+            background-color: pink;
+
+           
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate">
+
+        </div>
+    </div>
+</body>
+</html>
